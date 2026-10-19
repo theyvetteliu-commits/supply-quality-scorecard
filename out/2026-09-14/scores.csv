@@ -1,0 +1,81 @@
+partner_id,name,market,supply_type,bookings_28d,band,why,holdout,step,this_week,action
+KR-EX-02,Busan experience 2,Korea,Experiences,27,Red,late starts / no-shows 8.8%; rating 4.64; refunds 4.9%,,1,New step 1,Warning with fix tips
+IN-SV-02,Jaipur service 2,India,Services,27,Red,late cancellations 5.3%; rating 4.66; repeat bookings 18%,,1,New step 1,Warning with fix tips
+SEA-ST-10,Bali stay 10,Southeast Asia,Stays,14,Red,host cancellations 3.3%; response rate 85%; rating 4.55; complaints per 100 stays 4.9,,1,New step 1,Warning with fix tips
+KR-ST-03,Busan stay 3,Korea,Stays,8,Red,complaints per 100 stays 5.0; host cancellations 2.6%; response rate 89%; rating 4.62,,1,New step 1,Warning with fix tips
+IN-ST-01,Goa stay 1,India,Stays,31,Red,host cancellations 4.1%; rating 4.47; complaints per 100 stays 6.0; response rate 83%,,1,New step 1,Warning with fix tips
+SEA-ST-04,Hanoi stay 4,Southeast Asia,Stays,22,Red,complaints per 100 stays 6.0; host cancellations 2.9%; response rate 83%; rating 4.61,,1,New step 1,Warning with fix tips
+JP-ST-03,Kyoto stay 3,Japan,Stays,29,Red,host cancellations 3.0%; complaints per 100 stays 5.0; response rate 88%; rating 4.62,,1,New step 1,Warning with fix tips
+JP-ST-06,Kyoto stay 6,Japan,Stays,33,Red,host cancellations 3.1%; complaints per 100 stays 5.5; response rate 83%; rating 4.60,,1,New step 1,Warning with fix tips
+JP-ST-09,Kyoto stay 9,Japan,Stays,17,Red,complaints per 100 stays 5.4; host cancellations 2.7%; response rate 85%; rating 4.58,,1,New step 1,Warning with fix tips
+IN-ST-02,Mumbai stay 2,India,Stays,9,Red,complaints per 100 stays 6.1; host cancellations 2.9%; response rate 87%; rating 4.56,,1,New step 1,Warning with fix tips
+KR-ST-10,Busan stay 10,Korea,Stays,29,Red,complaints per 100 stays 5.2; host cancellations 2.6%; response rate 87%; rating 4.61,yes,0,Holdout,No action (holdout group)
+KR-ST-04,Busan stay 4,Korea,Stays,13,Red,host cancellations 3.4%; response rate 86%; rating 4.61; complaints per 100 stays 4.8,yes,0,Holdout,No action (holdout group)
+JP-ST-07,Kyoto stay 7,Japan,Stays,14,Red,host cancellations 3.6%; complaints per 100 stays 5.6; response rate 86%; rating 4.56,yes,0,Holdout,No action (holdout group)
+JP-ST-04,Osaka stay 4,Japan,Stays,28,Red,host cancellations 3.0%; response rate 86%; rating 4.64; complaints per 100 stays 4.9,yes,0,Holdout,No action (holdout group)
+SEA-EX-05,Hanoi experience 5,Southeast Asia,Experiences,10,Amber,late starts / no-shows 7.3%; rating 4.70; refunds 4.5%,,0,Heads-up,"Heads-up with fix tips, no step"
+JP-EX-03,Kyoto experience 3,Japan,Experiences,11,Amber,late starts / no-shows 5.9%; rating 4.74; refunds 4.2%,,0,Heads-up,"Heads-up with fix tips, no step"
+JP-EX-06,Kyoto experience 6,Japan,Experiences,36,Amber,late starts / no-shows 5.5%; rating 4.79; refunds 3.8%,yes,0,,
+SEA-SV-04,Bangkok service 4,Southeast Asia,Services,29,Amber,late cancellations 3.4%; rating 4.72,,0,Heads-up,"Heads-up with fix tips, no step"
+IN-SV-01,Goa service 1,India,Services,25,Amber,late cancellations 3.1%; rating 4.75,,0,Heads-up,"Heads-up with fix tips, no step"
+JP-SV-01,Osaka service 1,Japan,Services,30,Amber,late cancellations 2.0%,yes,0,,
+KR-SV-04,Seoul service 4,Korea,Services,18,Amber,late cancellations 3.7%; rating 4.77,yes,0,,
+IN-ST-03,Goa stay 3,India,Stays,35,Amber,host cancellations 2.1%; complaints per 100 stays 4.6,,0,Heads-up,"Heads-up with fix tips, no step"
+JP-ST-02,Kyoto stay 2,Japan,Stays,12,Amber,host cancellations 2.2%; complaints per 100 stays 4.1,,0,Heads-up,"Heads-up with fix tips, no step"
+JP-ST-08,Kyoto stay 8,Japan,Stays,31,Amber,host cancellations 1.6%,,0,Heads-up,"Heads-up with fix tips, no step"
+SEA-EX-01,Bali experience 1,Southeast Asia,Experiences,23,Green,,,0,,
+SEA-EX-04,Bali experience 4,Southeast Asia,Experiences,23,Green,,,0,,
+SEA-EX-06,Bali experience 6,Southeast Asia,Experiences,16,Green,,,0,,
+SEA-EX-02,Bangkok experience 2,Southeast Asia,Experiences,31,Green,,,0,,
+SEA-EX-03,Bangkok experience 3,Southeast Asia,Experiences,9,Green,,,0,,
+KR-EX-04,Busan experience 4,Korea,Experiences,12,Green,,,0,,
+KR-EX-05,Busan experience 5,Korea,Experiences,28,Green,,,0,,
+KR-EX-06,Busan experience 6,Korea,Experiences,35,Green,,,0,,
+IN-EX-04,Jaipur experience 4,India,Experiences,28,Green,,,0,,
+IN-EX-05,Jaipur experience 5,India,Experiences,15,Green,,,0,,
+IN-EX-01,Mumbai experience 1,India,Experiences,20,Green,,,0,,
+IN-EX-02,Mumbai experience 2,India,Experiences,32,Green,,,0,,
+IN-EX-03,Mumbai experience 3,India,Experiences,27,Green,,yes,0,,
+IN-EX-06,Mumbai experience 6,India,Experiences,11,Green,,,0,,
+JP-EX-02,Osaka experience 2,Japan,Experiences,11,Green,,,0,,
+JP-EX-04,Osaka experience 4,Japan,Experiences,40,Green,,,0,,
+JP-EX-05,Osaka experience 5,Japan,Experiences,27,Green,,,0,,
+KR-EX-01,Seoul experience 1,Korea,Experiences,23,Green,,,0,,
+KR-EX-03,Seoul experience 3,Korea,Experiences,26,Green,,,0,,
+JP-EX-01,Tokyo experience 1,Japan,Experiences,21,Green,,,0,,
+SEA-SV-01,Bali service 1,Southeast Asia,Services,33,Green,,,0,,
+SEA-SV-02,Bali service 2,Southeast Asia,Services,28,Green,,,0,,
+KR-SV-01,Busan service 1,Korea,Services,18,Green,,,0,,
+SEA-SV-03,Hanoi service 3,Southeast Asia,Services,20,Green,,,0,,
+JP-SV-02,Kyoto service 2,Japan,Services,9,Green,,,0,,
+JP-SV-03,Kyoto service 3,Japan,Services,15,Green,,,0,,
+IN-SV-03,Mumbai service 3,India,Services,21,Green,,,0,,
+IN-SV-04,Mumbai service 4,India,Services,21,Green,,,0,,
+JP-SV-04,Osaka service 4,Japan,Services,23,Green,,,0,,
+KR-SV-02,Seoul service 2,Korea,Services,26,Green,,,0,,
+KR-SV-03,Seoul service 3,Korea,Services,28,Green,,,0,,
+SEA-ST-02,Bali stay 2,Southeast Asia,Stays,34,Green,,,0,,
+SEA-ST-03,Bali stay 3,Southeast Asia,Stays,14,Green,,,0,,
+SEA-ST-06,Bali stay 6,Southeast Asia,Stays,17,Green,,,0,,
+SEA-ST-07,Bangkok stay 7,Southeast Asia,Stays,20,Green,,yes,0,,
+KR-ST-01,Busan stay 1,Korea,Stays,12,Green,,,0,,
+KR-ST-02,Busan stay 2,Korea,Stays,27,Green,,,0,,
+KR-ST-05,Busan stay 5,Korea,Stays,12,Green,,,0,,
+KR-ST-07,Busan stay 7,Korea,Stays,18,Green,,,0,,
+KR-ST-08,Busan stay 8,Korea,Stays,12,Green,,,0,,
+IN-ST-04,Goa stay 4,India,Stays,25,Green,,,0,,
+IN-ST-05,Goa stay 5,India,Stays,15,Green,,,0,,
+IN-ST-06,Goa stay 6,India,Stays,12,Green,,,0,,
+IN-ST-07,Goa stay 7,India,Stays,13,Green,,,0,,
+IN-ST-08,Goa stay 8,India,Stays,14,Green,,,0,,
+SEA-ST-01,Hanoi stay 1,Southeast Asia,Stays,12,Green,,,0,,
+SEA-ST-05,Hanoi stay 5,Southeast Asia,Stays,14,Green,,,0,,
+SEA-ST-08,Hanoi stay 8,Southeast Asia,Stays,27,Green,,,0,,
+SEA-ST-09,Hanoi stay 9,Southeast Asia,Stays,32,Green,,,0,,
+JP-ST-01,Kyoto stay 1,Japan,Stays,26,Green,,,0,,
+JP-ST-10,Kyoto stay 10,Japan,Stays,9,Green,,,0,,
+JP-ST-05,Kyoto stay 5,Japan,Stays,27,Green,,,0,,
+IN-ST-10,Mumbai stay 10,India,Stays,29,Green,,,0,,
+IN-ST-09,Mumbai stay 9,India,Stays,9,Green,,,0,,
+KR-ST-06,Seoul stay 6,Korea,Stays,30,Green,,,0,,
+KR-ST-09,Seoul stay 9,Korea,Stays,26,Green,,,0,,

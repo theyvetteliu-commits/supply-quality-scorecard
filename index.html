@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supply Quality Scorecard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F7F9;--card:#fff;--text:#14161B;--muted:#6B7280;--border:#E5E7EB;--accent:#E0484E;--focus:#3B5BDB;
+--g:#2F9E6A;--g-bg:#E8F6EF;--a:#D99A1E;--a-bg:#FEF3C7;--r:#D6453D;--r-bg:#FDE8E6;--n:#9CA3AF;--n-bg:#F3F4F6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 Inter,system-ui,sans-serif}
+.wrap{max-width:1160px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:22px;margin:0;letter-spacing:-.01em} h2{font-size:14px;margin:0 0 12px}
+.muted{color:var(--muted)} .sub{font-size:12px;color:var(--muted)}
+.badge{font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;background:#FEF3C7;color:#92400E;margin-left:8px;vertical-align:middle}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px}
+.filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin:18px 0 14px}
+.flabel{font-size:12px;color:var(--muted);margin-right:6px}
+.seg{display:inline-flex;flex-wrap:wrap;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:2px}
+.seg button{border:0;background:none;font:inherit;font-size:13px;padding:5px 10px;border-radius:6px;cursor:pointer;color:var(--muted)}
+.seg button.on{background:var(--text);color:#fff}
+.seg button:focus-visible,.row-btn:focus-visible,td.cell:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:12px}
+.tile{cursor:pointer;transition:opacity .15s,border-color .15s}
+.tile.dim{opacity:.45} .tile.sel{border-color:var(--text)}
+.lab{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.big{font-size:28px;font-weight:700;line-height:1.1} .big span{font-size:13px;font-weight:500;color:var(--muted)}
+.bar{display:flex;height:8px;border-radius:4px;overflow:hidden;margin:10px 0 8px;background:var(--border)}
+.bar i.g{background:var(--g)} .bar i.a{background:var(--a)} .bar i.r{background:var(--r)}
+.up{color:var(--r)} .down{color:var(--g)}
+.row2{display:grid;grid-template-columns:1.2fr 1fr;gap:12px;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:9px 8px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:500;font-size:12px} th.mk{color:var(--text);font-weight:600;font-size:13px}
+td.cell{cursor:pointer;border-radius:6px} td.cell:hover .heat{outline:2px solid var(--text)}
+td.cell.sel .heat{outline:2px solid var(--text)}
+.heat{display:inline-block;min-width:52px;text-align:center;padding:3px 8px;border-radius:6px;font-weight:600}
+.arr{font-size:10px;margin-left:6px}
+.effect{display:grid;grid-template-columns:1fr 1.15fr;gap:12px;align-items:center}
+.effect svg{width:100%;height:auto} .effect svg text{font-size:12px;fill:var(--muted)}
+.stat{margin-bottom:10px} .stat b{font-size:26px;display:block;line-height:1.1}
+.key{display:inline-block;width:10px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.themes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tb{display:grid;grid-template-columns:130px 1fr 28px 30px;align-items:center;gap:8px;margin:5px 0;font-size:13px}
+.track{height:8px;background:#F1F2F4;border-radius:4px;overflow:hidden} .track i{display:block;height:100%;background:var(--accent);border-radius:4px}
+.tk{text-align:right;font-weight:600} .td{font-size:12px;text-align:right}
+.chip{font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;background:#EEF2FF;color:#3B5BDB;margin-left:6px}
+.tablebar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:8px}
+input[type=search]{font:inherit;font-size:13px;padding:6px 10px;border:1px solid var(--border);border-radius:8px;min-width:220px;background:var(--card)}
+.pill{font-size:12px;font-weight:600;padding:2px 8px;border-radius:99px;white-space:nowrap}
+.pill.g{background:var(--g-bg);color:var(--g)} .pill.a{background:var(--a-bg);color:#92400E}
+.pill.r{background:var(--r-bg);color:var(--r)} .pill.n{background:var(--n-bg);color:var(--muted)}
+.steps{white-space:nowrap} .steps i{display:inline-block;width:14px;height:6px;border-radius:3px;background:var(--border);margin-right:3px} .steps i.lit{background:var(--r)}
+tr.prow{cursor:pointer} tr.prow:hover td{background:#FAFAFB} tr.prow.open td{background:#F7F8FA}
+.row-btn{all:unset;cursor:pointer;font-weight:600}
+.caret{display:inline-block;width:12px;color:var(--muted);transition:transform .15s} tr.open .caret{transform:rotate(90deg)}
+tr.detail td{background:#F7F8FA;padding:4px 16px 18px}
+.dgrid{display:grid;grid-template-columns:1fr 1.2fr 1.2fr;gap:18px}
+.strip{display:flex;gap:6px;margin-top:4px} .strip div{text-align:center;font-size:11px;color:var(--muted)}
+.strip i{display:block;width:34px;height:22px;border-radius:5px;margin-bottom:3px}
+.strip i.Green{background:var(--g)} .strip i.Amber{background:var(--a)} .strip i.Red{background:var(--r)} .strip i.Low{background:var(--n)}
+.mt td{padding:5px 6px;border-bottom:1px solid var(--border)} .mt td:nth-child(2){text-align:right;font-weight:600}
+.mt .ok{color:var(--g)} .mt .warn{color:#B45309} .mt .bad{color:var(--r)}
+.quote{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:7px 10px;margin:0 0 6px;font-size:13px}
+.quote span{font-size:11px;font-weight:600;color:var(--muted);display:block}
+.ladder{display:flex;gap:8px;flex-wrap:wrap;font-size:12px;margin-top:12px}
+.ladder div{flex:1;min-width:150px;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:8px 10px}
+.tw{overflow-x:auto} .empty{padding:18px;text-align:center;color:var(--muted)}
+footer{color:var(--muted);font-size:12px;margin-top:18px}
+@media (max-width:900px){.tiles,.row2,.themes,.effect,.dgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Supply quality scorecard <span class="badge">Demo data</span></h1>
+  <div class="sub">Stays, experiences and services across four markets · last 28 days · rebuilt every Monday</div>
+
+  <div class="filters">
+    <div><span class="flabel">Week of</span><div class="seg" id="f-week"></div></div>
+    <div><span class="flabel">Market</span><div class="seg" id="f-market"></div></div>
+    <div><span class="flabel">Supply</span><div class="seg" id="f-type"></div></div>
+  </div>
+
+  <div class="tiles" id="tiles"></div>
+
+  <div class="row2">
+    <div class="card"><h2>Where quality is slipping <span class="muted" style="font-weight:400">· share in red · click a cell to filter</span></h2>
+      <table id="heat"></table></div>
+    <div class="card" id="effect"></div>
+  </div>
+
+  <div class="card" style="margin-bottom:12px">
+    <h2>Why: what guests complain about <span class="chip" id="tagsrc"></span> <span class="muted" style="font-weight:400" id="themes-sub"></span></h2>
+    <div class="themes" id="themes"></div>
+  </div>
+
+  <div class="card">
+    <div class="tablebar">
+      <h2 style="margin:0">Partners <span class="muted" style="font-weight:400" id="count"></span></h2>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+        <div class="seg" id="f-band"></div>
+        <input type="search" id="q" placeholder="Search partner or ID" aria-label="Search partners">
+      </div>
+    </div>
+    <div class="tw"><table id="ptable"></table></div>
+    <div class="lab" style="margin-top:14px">What happens when a partner stays red</div><div class="ladder" style="margin-top:6px"><div><b>Level 1</b><br>Warning with fix tips</div><div><b>Level 2</b><br>Coaching call + 30-day plan</div>
+      <div><b>Level 3</b><br>Listing review, hidden from search</div><div><b>Safety issue</b><br>Straight to level 3, same week</div></div>
+  </div>
+  <footer>Every partner, figure and complaint here is invented. Click any partner to see its six-week history, metrics against the thresholds, and what guests said.</footer>
+</div>
+
+<script>
+const TYPES = ["Stays", "Experiences", "Services"];
+const MARKETS = ["Japan", "Korea", "India", "Southeast Asia"];
+const BANDS = { "Needs action": ["Red", "Amber"], "Red": ["Red"], "Amber": ["Amber"], "Green": ["Green"], "All": null };
+const WEEK_LABEL = { "New step 1": "Warning sent", "New step 2": "Coaching call", "New step 3": "Listing review",
+  "Review again": "Listing review", "Safety review": "Safety review", "Reminder": "Reminder", "Holdout": "Left alone (comparison)",
+  "Heads-up": "Heads-up", "Cleared": "Cleared", "Back to green": "Back to green" };
+const PILL = { Green: "g", Amber: "a", Red: "r", "Not enough data": "n" };
+const LABEL = {
+  host_cancel_rate: "Host cancellations", response_rate: "Response rate", avg_rating: "Rating",
+  complaints_per_100: "Complaints / 100 stays", late_or_no_show_rate: "Late starts / no-shows",
+  refund_rate: "Refunds", late_cancel_rate: "Late cancellations", rebook_rate: "Repeat bookings",
+};
+let D, state = { week: null, market: "All", type: "All", band: "Red", q: "", open: null };
+
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmtDate = (d, long) => new Date(d + "T00:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: long ? "long" : "short", timeZone: "UTC" });
+const pct = v => (v * 100).toFixed(0) + "%";
+const fmtMetric = (k, v) => k.endsWith("rate") ? (v * 100).toFixed(v < 0.1 ? 1 : 0) + "%" : k === "avg_rating" ? v.toFixed(2) : String(v);
+
+function seg(id, options, key, labels) {
+  const el = document.getElementById(id);
+  el.innerHTML = options.map(o => `<button data-v="${esc(o)}" aria-pressed="false">${esc(labels ? labels(o) : o)}</button>`).join("");
+  el.onclick = e => { const v = e.target.dataset.v; if (v) { state[key] = v; state.open = null; render(); } };
+}
+
+function prevWeek() { const i = D.weeks.indexOf(state.week); return i > 0 ? D.weeks[i - 1] : null; }
+function rowsFor(week) {
+  return (D.rows[week] || []).map(r => ({ ...r, ...D.partners[r.id] }))
+    .filter(r => (state.market === "All" || r.market === state.market));
+}
+
+function renderTiles(rows, prevRows) {
+  const prevBand = Object.fromEntries(prevRows.map(r => [r.id, r.band]));
+  document.getElementById("tiles").innerHTML = TYPES.map(t => {
+    const rs = rows.filter(r => r.type === t && r.band !== "Not enough data");
+    const c = { Green: 0, Amber: 0, Red: 0 }; rs.forEach(r => c[r.band]++);
+    const n = rs.length || 1, was = rs.filter(r => prevBand[r.id] === "Red").length, d = c.Red - was;
+    const cls = state.type === "All" ? "" : state.type === t ? "sel" : "dim";
+    return `<div class="card tile ${cls}" data-t="${t}" role="button" tabindex="0" aria-label="Filter to ${t}">
+      <div class="lab">${t}</div><div class="big">${c.Red} <span>red of ${rs.length}</span></div>
+      <div class="bar"><i class="g" style="flex:${c.Green}"></i><i class="a" style="flex:${c.Amber}"></i><i class="r" style="flex:${c.Red}"></i></div>
+      <div class="sub">${pct(c.Green / n)} green · ${pct(c.Amber / n)} amber · ${prevWeek() ? `<b class="${d > 0 ? "up" : d < 0 ? "down" : ""}">${d >= 0 ? "+" : ""}${d} red vs last week</b>` : "first week"}</div></div>`;
+  }).join("");
+  document.querySelectorAll(".tile").forEach(el => {
+    const go = () => { state.type = state.type === el.dataset.t ? "All" : el.dataset.t; render(); };
+    el.onclick = go; el.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } };
+  });
+}
+
+function renderHeat() {
+  const all = (D.rows[state.week] || []).map(r => ({ ...r, ...D.partners[r.id] }));
+  const pw = prevWeek(), prevBand = pw ? Object.fromEntries(D.rows[pw].map(r => [r.id, r.band])) : {};
+  let h = `<tr><th></th>${TYPES.map(t => `<th>${t}</th>`).join("")}</tr>`;
+  for (const m of MARKETS) {
+    h += `<tr><th class="mk">${m}</th>`;
+    for (const t of TYPES) {
+      const rs = all.filter(r => r.market === m && r.type === t && r.band !== "Not enough data");
+      const share = rs.length ? rs.filter(r => r.band === "Red").length / rs.length : 0;
+      const was = rs.length && pw ? rs.filter(r => prevBand[r.id] === "Red").length / rs.length : share;
+      const bg = share ? `rgba(214,69,61,${Math.min(0.9, 0.08 + share * 2.2).toFixed(2)})` : "#F3F4F6";
+      const fg = share >= 0.15 ? "#fff" : "var(--text)";
+      const arrow = share > was ? `<span class="arr up">▲</span>` : share < was ? `<span class="arr down">▼</span>` : "";
+      const sel = state.market === m && state.type === t ? "sel" : "";
+      h += `<td class="cell ${sel}" tabindex="0" data-m="${m}" data-t="${t}" aria-label="${m} ${t}: ${pct(share)} red">
+        <span class="heat" style="background:${bg};color:${fg}">${pct(share)}</span>${arrow}</td>`;
+    }
+    h += "</tr>";
+  }
+  const el = document.getElementById("heat");
+  el.innerHTML = h;
+  el.querySelectorAll("td.cell").forEach(td => {
+    const go = () => {
+      const same = state.market === td.dataset.m && state.type === td.dataset.t;
+      state.market = same ? "All" : td.dataset.m; state.type = same ? "All" : td.dataset.t; state.open = null; render();
+    };
+    td.onclick = go; td.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } };
+  });
+}
+
+function renderEffect() {
+  const E = D.effect, el = document.getElementById("effect");
+  if (!E) { el.innerHTML = ""; return; }
+  const w = 300, h = 170, pad = 34, left = pad + 14, n = E.dates.length;
+  const x = i => left + i * (w - left - pad) / Math.max(n - 1, 1), y = v => h - pad - v * (h - 2 * pad);
+  let s = `<line x1="${left}" y1="${y(0)}" x2="${w - pad}" y2="${y(0)}" stroke="var(--border)"/>
+    <line x1="${left}" y1="${y(1)}" x2="${w - pad}" y2="${y(1)}" stroke="var(--border)" stroke-dasharray="3 3"/>
+    <text x="${left - 6}" y="${y(1) + 4}" text-anchor="end">100%</text><text x="${left - 6}" y="${y(0) + 4}" text-anchor="end">0%</text>`;
+  for (const [g, col] of [["holdout", "var(--muted)"], ["ladder", "var(--accent)"]]) {
+    const pts = E[g].trend.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
+    s += `<polyline points="${pts}" fill="none" stroke="${col}" stroke-width="2.5"/>`;
+    E[g].trend.forEach((v, i) => s += `<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3" fill="${col}"><title>${fmtDate(E.dates[i])}: ${pct(v)} still red</title></circle>`);
+  }
+  s += `<text x="${x(0)}" y="${h - 8}" text-anchor="middle">${fmtDate(E.dates[0])}</text><text x="${x(n - 1)}" y="${h - 8}" text-anchor="middle">${fmtDate(E.dates[n - 1])}</text>`;
+  const L = E.ladder, H = E.holdout;
+  el.innerHTML = `<h2>Do the warnings actually work?</h2><div class="effect"><div>
+    <div class="stat"><span class="key" style="background:var(--accent)"></span>Partners we warned<b>${pct(L.share)}</b><span class="muted">still red (${L.still_red} of ${L.n} who were red on ${fmtDate(E.start)})</span></div>
+    <div class="stat"><span class="key" style="background:var(--muted)"></span>Partners we left alone<b>${pct(H.share)}</b><span class="muted">still red (${H.still_red} of ${H.n})</span></div>
+    </div><svg viewBox="0 0 ${w} ${h}" role="img" aria-label="Share still red over time, warned vs left alone">${s}</svg></div>
+    <div class="sub">Some partners recover on their own. So we leave 15% of them alone on purpose (never for safety issues) and compare. Fewer warned partners still red = the warnings work, not luck. Small sample in this demo.</div>`;
+}
+
+function renderThemes() {
+  const cur = D.themes[state.week] || {}, pw = prevWeek(), old = pw ? D.themes[pw] || {} : {};
+  const pick = (obj, t) => { const out = {}; for (const [k, v] of Object.entries(obj)) { const [m, ty, th] = k.split("|"); if (ty === t && (state.market === "All" || m === state.market)) out[th] = (out[th] || 0) + v; } return out; };
+  const types = state.type === "All" ? TYPES : [state.type];
+  document.getElementById("themes").style.gridTemplateColumns = types.length === 1 ? "1fr" : "";
+  document.getElementById("themes").innerHTML = types.map(t => {
+    const now = pick(cur, t), was = pick(old, t), total = Object.values(now).reduce((a, b) => a + b, 0) || 1;
+    const top = Object.entries(now).sort((a, b) => b[1] - a[1]).slice(0, types.length === 1 ? 6 : 4);
+    const bars = top.map(([name, k]) => { const d = k - (was[name] || 0);
+      return `<div class="tb"><span>${esc(name)}</span><span class="track"><i style="width:${(k / total * 100).toFixed(0)}%"></i></span><span class="tk">${k}</span><span class="td ${d > 0 ? "up" : d < 0 ? "down" : ""}">${pw ? (d >= 0 ? "+" : "") + d : ""}</span></div>`; }).join("") || `<div class="sub">No complaints.</div>`;
+    return `<div><div class="lab">${t} · ${Object.values(now).reduce((a, b) => a + b, 0)} complaints</div>${bars}</div>`;
+  }).join("");
+  document.getElementById("tagsrc").textContent = D.themes_by === "ai" ? "Tagged by AI" : "Keyword-tagged";
+  document.getElementById("themes-sub").textContent = `· week of ${fmtDate(state.week)}${state.market !== "All" ? " · " + state.market : ""}${pw ? " · change vs last week" : ""}`;
+}
+
+function metricRows(r) {
+  const rules = D.rules[r.type];
+  return Object.entries(rules).filter(([k]) => k !== "min_bookings").map(([k, [dir, red, amber]]) => {
+    const v = r.metrics[k]; if (v == null) return "";
+    const bad = dir === "high" ? v >= red : v < red, warn = dir === "high" ? v >= amber : v < amber;
+    const cls = bad ? "bad" : warn ? "warn" : "ok";
+    const rule = `${dir === "high" ? "red at ≥" : "red below"} ${fmtMetric(k, red)}`;
+    return `<tr><td>${LABEL[k]}</td><td class="${cls}">${fmtMetric(k, v)}</td><td class="sub">${rule}</td></tr>`;
+  }).join("") + `<tr><td>Bookings (28 days)</td><td>${r.metrics.bookings_28d ?? "–"}</td><td class="sub">min ${rules.min_bookings} to score</td></tr>`
+    + (r.metrics.safety_flags ? `<tr><td>Safety flags</td><td class="bad">${r.metrics.safety_flags}</td><td class="sub">any = review</td></tr>` : "");
+}
+
+function detail(r) {
+  const strip = D.weeks.map(w => { const x = (D.rows[w] || []).find(y => y.id === r.id);
+    const b = x ? (x.band === "Not enough data" ? "Low" : x.band) : "Low";
+    return `<div><i class="${b}" title="${fmtDate(w)}: ${x ? x.band : "no data"}"></i>${fmtDate(w)}</div>`; }).join("");
+  const comps = (D.complaints[state.week] || {})[r.id] || [];
+  const quotes = comps.length ? comps.map(c => `<div class="quote"><span>${esc(c.theme)}</span>${esc(c.text)}</div>`).join("") : `<div class="sub">No complaints this week.</div>`;
+  return `<tr class="detail"><td colspan="6"><div class="dgrid">
+    <div><div class="lab">Six-week history</div><div class="strip">${strip}</div>
+      <div class="lab" style="margin-top:14px">This week</div><div>${esc(r.action || "No action needed")}</div>
+      ${r.holdout ? `<div class="sub" style="margin-top:6px">In the comparison group: we deliberately take no action, to measure whether the warnings work.</div>` : ""}</div>
+    <div><div class="lab">Metrics vs thresholds</div><table class="mt">${metricRows(r)}</table></div>
+    <div><div class="lab">What guests said this week</div>${quotes}</div>
+  </div></td></tr>`;
+}
+
+function renderTable(rows) {
+  const allow = BANDS[state.band], q = state.q.trim().toLowerCase();
+  const order = { Red: 0, Amber: 1, Green: 2, "Not enough data": 3 };
+  const list = rows.filter(r => (state.type === "All" || r.type === state.type) && (!allow || allow.includes(r.band))
+    && (!q || r.name.toLowerCase().includes(q) || r.id.toLowerCase().includes(q)))
+    .sort((a, b) => order[a.band] - order[b.band] || b.step - a.step || a.name.localeCompare(b.name));
+  document.getElementById("count").textContent = `· ${list.length} shown · week of ${fmtDate(state.week, true)}`;
+  const head = `<tr><th>Partner</th><th>Supply</th><th>Band</th><th>Warning level</th><th>Action this week</th><th>Why</th></tr>`;
+  const body = list.map(r => {
+    const open = state.open === r.id;
+    const steps = [1, 2, 3].map(i => `<i class="${i <= r.step ? "lit" : ""}"></i>`).join("");
+    return `<tr class="prow ${open ? "open" : ""}" data-id="${r.id}">
+      <td><button class="row-btn" aria-expanded="${open}"><span class="caret">▸</span>${esc(r.name)}</button><br><span class="sub">${r.id} · ${r.market}</span></td>
+      <td>${r.type}</td><td><span class="pill ${PILL[r.band]}">${r.band}</span></td>
+      <td class="steps" aria-label="Warning level ${r.step} of 3">${steps}</td><td style="white-space:nowrap">${esc(WEEK_LABEL[r.week] ?? r.week)}</td>
+      <td class="sub">${esc(r.why)}</td></tr>${open ? detail(r) : ""}`;
+  }).join("");
+  const el = document.getElementById("ptable");
+  el.innerHTML = head + (body || `<tr><td colspan="6" class="empty">No partners match these filters.</td></tr>`);
+  el.querySelectorAll("tr.prow").forEach(tr => tr.onclick = () => { state.open = state.open === tr.dataset.id ? null : tr.dataset.id; render(); });
+}
+
+function render() {
+  for (const [id, key] of [["f-week", "week"], ["f-market", "market"], ["f-type", "type"], ["f-band", "band"]])
+    document.querySelectorAll(`#${id} button`).forEach(b => { const on = b.dataset.v === state[key]; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); });
+  const rows = rowsFor(state.week), pw = prevWeek();
+  renderTiles(rows, pw ? rowsFor(pw) : []);
+  renderHeat(); renderThemes(); renderTable(rows);
+}
+
+async function init() {
+  D = await (await fetch("site-data.json", { cache: "no-store" })).json();
+  state.week = D.weeks[D.weeks.length - 1];
+  seg("f-week", D.weeks, "week", w => fmtDate(w));
+  seg("f-market", ["All", ...MARKETS], "market");
+  seg("f-type", ["All", ...TYPES], "type");
+  seg("f-band", Object.keys(BANDS), "band");
+  document.getElementById("q").oninput = e => { state.q = e.target.value; state.open = null; renderTable(rowsFor(state.week)); };
+  renderEffect();
+  // open the most urgent partner so the click-through is obvious
+  const top = (D.rows[state.week] || []).find(r => r.band === "Red");
+  if (top) state.open = top.id;
+  render();
+}
+init();
+</script>
+</body>
+</html>

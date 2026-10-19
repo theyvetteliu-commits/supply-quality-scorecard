@@ -1,0 +1,84 @@
+partner_id,market,supply_type,theme,text
+JP-ST-01,Japan,Stays,Cleanliness,Hair on the sheets and dust everywhere
+JP-ST-02,Japan,Stays,Check-in,"Lockbox code didn't work, waited outside 40 minutes"
+JP-ST-03,Japan,Stays,Cleanliness,Kitchen smelled and the floor had stains
+JP-ST-03,Japan,Stays,Cleanliness,Hair on the sheets and dust everywhere
+JP-ST-04,Japan,Stays,Cleanliness,Kitchen smelled and the floor had stains
+JP-ST-04,Japan,Stays,Not as described,"Not as described, no view at all"
+JP-ST-05,Japan,Stays,Cleanliness,Kitchen smelled and the floor had stains
+JP-ST-06,Japan,Stays,Cleanliness,Not cleaned properly between guests
+JP-ST-06,Japan,Stays,Not as described,Much smaller than the photos
+JP-ST-06,Japan,Stays,Noise,Very noisy street all night
+JP-ST-07,Japan,Stays,Cleanliness,Hair on the sheets and dust everywhere
+JP-ST-07,Japan,Stays,Cleanliness,Not cleaned properly between guests
+JP-ST-09,Japan,Stays,Check-in,Key wasn't where the host said
+JP-ST-09,Japan,Stays,Check-in,Couldn't get in until midnight
+JP-ST-10,Japan,Stays,Check-in,"Lockbox code didn't work, waited outside 40 minutes"
+JP-EX-02,Japan,Experiences,Value,Hidden fee for the boat
+JP-EX-03,Japan,Experiences,Late start / no-show,"Started 45 minutes late, no apology"
+JP-EX-04,Japan,Experiences,Meeting point,Wrong address in the booking
+JP-EX-06,Japan,Experiences,Value,Overpriced for what it was
+JP-SV-01,Japan,Services,Quality of work,Photos were blurry
+JP-SV-02,Japan,Services,Pricing,Overcharged for ingredients
+JP-SV-03,Japan,Services,Communication,No reply for two days before the booking
+JP-SV-04,Japan,Services,Pricing,Overcharged for ingredients
+KR-ST-01,Korea,Stays,Not as described,"Not as described, no view at all"
+KR-ST-02,Korea,Stays,Cleanliness,Not cleaned properly between guests
+KR-ST-03,Korea,Stays,Cleanliness,Hair on the sheets and dust everywhere
+KR-ST-03,Korea,Stays,Not as described,Much smaller than the photos
+KR-ST-04,Korea,Stays,Host communication,Host never replied to messages
+KR-ST-04,Korea,Stays,Host communication,Host never replied to messages
+KR-ST-04,Korea,Stays,Amenities,No hot water for two days
+KR-ST-05,Korea,Stays,Host communication,Host never replied to messages
+KR-ST-07,Korea,Stays,Not as described,"Not as described, no view at all"
+KR-ST-09,Korea,Stays,Check-in,"Lockbox code didn't work, waited outside 40 minutes"
+KR-ST-10,Korea,Stays,Check-in,"Lockbox code didn't work, waited outside 40 minutes"
+KR-ST-10,Korea,Stays,Noise,Construction next door from 7am
+KR-EX-01,Korea,Experiences,Value,Hidden fee for the boat
+KR-EX-02,Korea,Experiences,Meeting point,Wrong address in the booking
+KR-EX-02,Korea,Experiences,Group size,Group was too big to hear anything
+KR-EX-03,Korea,Experiences,Group size,Group was too big to hear anything
+KR-EX-04,Korea,Experiences,Guide quality,Guide seemed rushed and bored
+KR-EX-05,Korea,Experiences,Late start / no-show,Guide was 30 minutes late
+KR-EX-06,Korea,Experiences,Guide quality,Guide's English was hard to follow
+KR-SV-01,Korea,Services,Hygiene,Left the kitchen messy
+KR-SV-02,Korea,Services,Punctuality,Photographer rescheduled the same day
+KR-SV-03,Korea,Services,Communication,No reply for two days before the booking
+KR-SV-04,Korea,Services,Pricing,Overcharged for ingredients
+IN-ST-01,India,Stays,Not as described,Much smaller than the photos
+IN-ST-01,India,Stays,Cleanliness,Not cleaned properly between guests
+IN-ST-02,India,Stays,Amenities,Wifi didn't work
+IN-ST-02,India,Stays,Check-in,Couldn't get in until midnight
+IN-ST-03,India,Stays,Check-in,"Lockbox code didn't work, waited outside 40 minutes"
+IN-ST-04,India,Stays,Not as described,"Not as described, no view at all"
+IN-ST-07,India,Stays,Host communication,Host never replied to messages
+IN-ST-08,India,Stays,Noise,Construction next door from 7am
+IN-ST-09,India,Stays,Amenities,Air con broken
+IN-ST-10,India,Stays,Amenities,Host ignored us when the shower broke
+IN-EX-01,India,Experiences,Value,Overpriced for what it was
+IN-EX-04,India,Experiences,Guide quality,Guide seemed rushed and bored
+IN-SV-01,India,Services,Pricing,Overcharged for ingredients
+IN-SV-02,India,Services,Punctuality,Photographer rescheduled the same day
+IN-SV-02,India,Services,Hygiene,Left the kitchen messy
+IN-SV-04,India,Services,Quality of work,Food was bland and undercooked
+SEA-ST-01,Southeast Asia,Stays,Check-in,Key wasn't where the host said
+SEA-ST-01,Southeast Asia,Stays,Amenities,Wifi didn't work
+SEA-ST-04,Southeast Asia,Stays,Cleanliness,Not cleaned properly between guests
+SEA-ST-04,Southeast Asia,Stays,Amenities,Host ignored us when the shower broke
+SEA-ST-06,Southeast Asia,Stays,Noise,Construction next door from 7am
+SEA-ST-07,Southeast Asia,Stays,Not as described,"Not as described, no view at all"
+SEA-ST-08,Southeast Asia,Stays,Cleanliness,Not cleaned properly between guests
+SEA-ST-10,Southeast Asia,Stays,Check-in,Key wasn't where the host said
+SEA-ST-10,Southeast Asia,Stays,Check-in,Couldn't get in until midnight
+SEA-EX-01,Southeast Asia,Experiences,Late start / no-show,"Host didn't show, cancelled on the day"
+SEA-EX-02,Southeast Asia,Experiences,Late start / no-show,"Started 45 minutes late, no apology"
+SEA-EX-03,Southeast Asia,Experiences,Late start / no-show,Guide was 30 minutes late
+SEA-EX-04,Southeast Asia,Experiences,Late start / no-show,Guide was 30 minutes late
+SEA-EX-04,Southeast Asia,Experiences,Value,Hidden fee for the boat
+SEA-EX-05,Southeast Asia,Experiences,Late start / no-show,"Host didn't show, cancelled on the day"
+SEA-EX-05,Southeast Asia,Experiences,Group size,Group was too big to hear anything
+SEA-EX-06,Southeast Asia,Experiences,Late start / no-show,Guide was 30 minutes late
+SEA-EX-06,Southeast Asia,Experiences,Group size,Group was too big to hear anything
+SEA-SV-01,Southeast Asia,Services,Hygiene,Left the kitchen messy
+SEA-SV-02,Southeast Asia,Services,Punctuality,Photographer rescheduled the same day
+SEA-SV-04,Southeast Asia,Services,Communication,No reply for two days before the booking

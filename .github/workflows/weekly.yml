@@ -1,0 +1,44 @@
+name: Weekly supply quality run
+
+# Every Monday: score every partner, apply the ladder, tag complaints,
+# write the report and partner messages, and commit the history.
+on:
+  # In the real setup this also runs on a schedule (every Monday):
+  # schedule:
+  #   - cron: "0 1 * * 1"
+  # The demo runs on demand only, because its data doesn't change.
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Run date YYYY-MM-DD (default: newest snapshot)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: supply-quality
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Score, escalate, tag, report
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # optional: AI complaint tagging
+        run: |
+          D="${{ github.event.inputs.date }}"
+          if [ -z "$D" ]; then D=$(ls data/snapshots/*.csv | sort | tail -1 | xargs basename | cut -d. -f1); fi
+          python scripts/run_weekly.py --date "$D"
+      - name: Save history
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data out site-data.json
+          git diff --staged --quiet || (git commit -m "Supply quality run $(date -u +%F)" && git push)

@@ -1,0 +1,81 @@
+partner_id,name,market,supply_type,bookings_28d,host_cancel_rate,response_rate,complaints_per_100,late_or_no_show_rate,refund_rate,safety_flags,late_cancel_rate,rebook_rate,avg_rating
+JP-ST-01,Kyoto stay 1,Japan,Stays,25,0.009,0.969,1.6,,,,,,4.86
+JP-ST-02,Kyoto stay 2,Japan,Stays,13,0.0243,0.898,3.8,,,,,,4.68
+JP-ST-03,Kyoto stay 3,Japan,Stays,36,0.0165,0.945,2.2,,,,,,4.78
+JP-ST-04,Osaka stay 4,Japan,Stays,23,0.0228,0.866,4.0,,,,,,4.63
+JP-ST-05,Kyoto stay 5,Japan,Stays,36,0.0093,0.966,1.5,,,,,,4.88
+JP-ST-06,Kyoto stay 6,Japan,Stays,26,0.0173,0.92,2.9,,,,,,4.73
+JP-ST-07,Kyoto stay 7,Japan,Stays,18,0.0275,0.887,4.6,,,,,,4.61
+JP-ST-08,Kyoto stay 8,Japan,Stays,24,0.0129,0.955,2.1,,,,,,4.83
+JP-ST-09,Kyoto stay 9,Japan,Stays,15,0.0164,0.921,3.7,,,,,,4.71
+JP-ST-10,Kyoto stay 10,Japan,Stays,8,0.0122,0.951,2.2,,,,,,4.82
+JP-EX-01,Tokyo experience 1,Japan,Experiences,15,,,,0.0201,0.016,0,,,4.91
+JP-EX-02,Osaka experience 2,Japan,Experiences,12,,,,0.0201,0.0169,0,,,4.9
+JP-EX-03,Kyoto experience 3,Japan,Experiences,10,,,,0.0723,0.048,0,,,4.7
+JP-EX-04,Osaka experience 4,Japan,Experiences,30,,,,0.0219,0.0184,0,,,4.89
+JP-EX-05,Osaka experience 5,Japan,Experiences,30,,,,0.017,0.0135,0,,,4.9
+JP-EX-06,Kyoto experience 6,Japan,Experiences,37,,,,0.0434,0.0324,0,,,4.78
+JP-SV-01,Osaka service 1,Japan,Services,28,,,,,,,0.0159,0.355,4.85
+JP-SV-02,Kyoto service 2,Japan,Services,8,,,,,,,0.0135,0.371,4.88
+JP-SV-03,Kyoto service 3,Japan,Services,13,,,,,,,0.0154,0.371,4.88
+JP-SV-04,Osaka service 4,Japan,Services,22,,,,,,,0.0207,0.363,4.86
+KR-ST-01,Busan stay 1,Korea,Stays,9,0.0126,0.956,2.0,,,,,,4.84
+KR-ST-02,Busan stay 2,Korea,Stays,34,0.008,0.97,1.3,,,,,,4.87
+KR-ST-03,Busan stay 3,Korea,Stays,8,0.0193,0.92,3.1,,,,,,4.76
+KR-ST-04,Busan stay 4,Korea,Stays,12,0.0303,0.89,4.9,,,,,,4.65
+KR-ST-05,Busan stay 5,Korea,Stays,13,0.01,0.966,1.8,,,,,,4.86
+KR-ST-06,Seoul stay 6,Korea,Stays,30,0.0106,0.958,2.4,,,,,,4.82
+KR-ST-07,Busan stay 7,Korea,Stays,19,0.0093,0.959,1.6,,,,,,4.85
+KR-ST-08,Busan stay 8,Korea,Stays,12,0.016,0.926,2.5,,,,,,4.78
+KR-ST-09,Seoul stay 9,Korea,Stays,32,0.0166,0.93,2.3,,,,,,4.8
+KR-ST-10,Busan stay 10,Korea,Stays,28,0.0302,0.844,4.7,,,,,,4.57
+KR-EX-01,Seoul experience 1,Korea,Experiences,22,,,,0.0321,0.0262,0,,,4.85
+KR-EX-02,Busan experience 2,Korea,Experiences,21,,,,0.0431,0.0304,0,,,4.8
+KR-EX-03,Seoul experience 3,Korea,Experiences,36,,,,0.0224,0.018,0,,,4.88
+KR-EX-04,Busan experience 4,Korea,Experiences,13,,,,0.0244,0.0193,0,,,4.86
+KR-EX-05,Busan experience 5,Korea,Experiences,22,,,,0.0134,0.0134,0,,,4.92
+KR-EX-06,Busan experience 6,Korea,Experiences,30,,,,0.0325,0.0273,0,,,4.82
+KR-SV-01,Busan service 1,Korea,Services,17,,,,,,,0.0136,0.38,4.9
+KR-SV-02,Seoul service 2,Korea,Services,30,,,,,,,0.0127,0.382,4.9
+KR-SV-03,Seoul service 3,Korea,Services,35,,,,,,,0.0142,0.382,4.89
+KR-SV-04,Seoul service 4,Korea,Services,13,,,,,,,0.0272,0.332,4.82
+IN-ST-01,Goa stay 1,India,Stays,26,0.0278,0.881,4.8,,,,,,4.7
+IN-ST-02,Mumbai stay 2,India,Stays,8,0.0236,0.89,4.3,,,,,,4.71
+IN-ST-03,Goa stay 3,India,Stays,27,0.0173,0.929,3.6,,,,,,4.74
+IN-ST-04,Goa stay 4,India,Stays,25,0.0071,0.976,1.1,,,,,,4.9
+IN-ST-05,Goa stay 5,India,Stays,18,0.0094,0.967,1.4,,,,,,4.87
+IN-ST-06,Goa stay 6,India,Stays,16,0.0058,0.983,1.1,,,,,,4.91
+IN-ST-07,Goa stay 7,India,Stays,15,0.0129,0.954,1.9,,,,,,4.82
+IN-ST-08,Goa stay 8,India,Stays,10,0.0079,0.976,1.3,,,,,,4.89
+IN-ST-09,Mumbai stay 9,India,Stays,10,0.0088,0.967,1.6,,,,,,4.86
+IN-ST-10,Mumbai stay 10,India,Stays,26,0.0128,0.945,2.1,,,,,,4.79
+IN-EX-01,Mumbai experience 1,India,Experiences,23,,,,0.0166,0.0132,0,,,4.92
+IN-EX-02,Mumbai experience 2,India,Experiences,30,,,,0.0131,0.0106,0,,,4.93
+IN-EX-03,Mumbai experience 3,India,Experiences,31,,,,0.0202,0.0147,0,,,4.9
+IN-EX-04,Jaipur experience 4,India,Experiences,25,,,,0.0178,0.016,0,,,4.9
+IN-EX-05,Jaipur experience 5,India,Experiences,17,,,,0.0087,0.0106,0,,,4.94
+IN-EX-06,Mumbai experience 6,India,Experiences,11,,,,0.0143,0.0112,0,,,4.92
+IN-SV-01,Goa service 1,India,Services,29,,,,,,,0.0599,0.188,4.64
+IN-SV-02,Jaipur service 2,India,Services,27,,,,,,,0.0554,0.198,4.62
+IN-SV-03,Mumbai service 3,India,Services,24,,,,,,,0.0183,0.372,4.86
+IN-SV-04,Mumbai service 4,India,Services,20,,,,,,,0.036,0.283,4.77
+SEA-ST-01,Hanoi stay 1,Southeast Asia,Stays,12,0.0129,0.949,2.4,,,,,,4.8
+SEA-ST-02,Bali stay 2,Southeast Asia,Stays,30,0.0064,0.976,1.1,,,,,,4.9
+SEA-ST-03,Bali stay 3,Southeast Asia,Stays,14,0.0072,0.976,1.6,,,,,,4.89
+SEA-ST-04,Hanoi stay 4,Southeast Asia,Stays,19,0.0255,0.905,3.4,,,,,,4.72
+SEA-ST-05,Hanoi stay 5,Southeast Asia,Stays,17,0.0058,0.977,1.3,,,,,,4.9
+SEA-ST-06,Bali stay 6,Southeast Asia,Stays,18,0.0092,0.969,1.6,,,,,,4.87
+SEA-ST-07,Bangkok stay 7,Southeast Asia,Stays,20,0.0083,0.967,1.6,,,,,,4.89
+SEA-ST-08,Hanoi stay 8,Southeast Asia,Stays,26,0.0075,0.975,1.1,,,,,,4.9
+SEA-ST-09,Hanoi stay 9,Southeast Asia,Stays,31,0.0085,0.97,1.4,,,,,,4.89
+SEA-ST-10,Bali stay 10,Southeast Asia,Stays,12,0.0233,0.89,3.4,,,,,,4.71
+SEA-EX-01,Bali experience 1,Southeast Asia,Experiences,21,,,,0.0312,0.0201,0,,,4.85
+SEA-EX-02,Bangkok experience 2,Southeast Asia,Experiences,26,,,,0.0339,0.0275,0,,,4.84
+SEA-EX-03,Bangkok experience 3,Southeast Asia,Experiences,9,,,,0.0466,0.0274,0,,,4.81
+SEA-EX-04,Bali experience 4,Southeast Asia,Experiences,23,,,,0.0445,0.0332,0,,,4.76
+SEA-EX-05,Hanoi experience 5,Southeast Asia,Experiences,12,,,,0.0855,0.0556,0,,,4.65
+SEA-EX-06,Bali experience 6,Southeast Asia,Experiences,15,,,,0.0505,0.036,0,,,4.78
+SEA-SV-01,Bali service 1,Southeast Asia,Services,34,,,,,,,0.0159,0.381,4.89
+SEA-SV-02,Bali service 2,Southeast Asia,Services,30,,,,,,,0.0142,0.376,4.88
+SEA-SV-03,Hanoi service 3,Southeast Asia,Services,18,,,,,,,0.0121,0.389,4.9
+SEA-SV-04,Bangkok service 4,Southeast Asia,Services,27,,,,,,,0.0309,0.307,4.78

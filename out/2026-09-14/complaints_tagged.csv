@@ -1,0 +1,90 @@
+partner_id,market,supply_type,theme,text
+JP-ST-01,Japan,Stays,Amenities,Wifi didn't work
+JP-ST-02,Japan,Stays,Check-in,Couldn't get in until midnight
+JP-ST-03,Japan,Stays,Amenities,Wifi didn't work
+JP-ST-03,Japan,Stays,Not as described,Much smaller than the photos
+JP-ST-04,Japan,Stays,Not as described,"Not as described, no view at all"
+JP-ST-04,Japan,Stays,Noise,Very noisy street all night
+JP-ST-05,Japan,Stays,Not as described,Much smaller than the photos
+JP-ST-06,Japan,Stays,Noise,Construction next door from 7am
+JP-ST-06,Japan,Stays,Amenities,Host ignored us when the shower broke
+JP-ST-07,Japan,Stays,Host communication,Host never replied to messages
+JP-ST-07,Japan,Stays,Amenities,Host ignored us when the shower broke
+JP-ST-08,Japan,Stays,Amenities,Host ignored us when the shower broke
+JP-ST-09,Japan,Stays,Cleanliness,Hair on the sheets and dust everywhere
+JP-ST-09,Japan,Stays,Amenities,No hot water for two days
+JP-ST-09,Japan,Stays,Not as described,Much smaller than the photos
+JP-ST-10,Japan,Stays,Not as described,"Not as described, no view at all"
+JP-EX-02,Japan,Experiences,Late start / no-show,Guide was 30 minutes late
+JP-EX-03,Japan,Experiences,Guide quality,Guide seemed rushed and bored
+JP-EX-03,Japan,Experiences,Meeting point,Wrong address in the booking
+JP-EX-03,Japan,Experiences,Late start / no-show,"Host didn't show, cancelled on the day"
+JP-EX-04,Japan,Experiences,Group size,Group was too big to hear anything
+JP-EX-05,Japan,Experiences,Value,Hidden fee for the boat
+JP-EX-06,Japan,Experiences,Meeting point,Wrong address in the booking
+JP-EX-06,Japan,Experiences,Value,Hidden fee for the boat
+JP-SV-01,Japan,Services,Hygiene,Left the kitchen messy
+JP-SV-02,Japan,Services,Punctuality,Photographer rescheduled the same day
+JP-SV-03,Japan,Services,Communication,No reply for two days before the booking
+JP-SV-04,Japan,Services,Punctuality,"No-show, had to rebook"
+KR-ST-01,Korea,Stays,Cleanliness,Not cleaned properly between guests
+KR-ST-03,Korea,Stays,Cleanliness,Bathroom was dirty when we arrived
+KR-ST-03,Korea,Stays,Check-in,"Lockbox code didn't work, waited outside 40 minutes"
+KR-ST-04,Korea,Stays,Cleanliness,Kitchen smelled and the floor had stains
+KR-ST-04,Korea,Stays,Cleanliness,Not cleaned properly between guests
+KR-ST-05,Korea,Stays,Amenities,Host ignored us when the shower broke
+KR-ST-06,Korea,Stays,Cleanliness,Hair on the sheets and dust everywhere
+KR-ST-07,Korea,Stays,Not as described,"Not as described, no view at all"
+KR-ST-08,Korea,Stays,Not as described,Much smaller than the photos
+KR-ST-10,Korea,Stays,Check-in,"Lockbox code didn't work, waited outside 40 minutes"
+KR-ST-10,Korea,Stays,Cleanliness,Hair on the sheets and dust everywhere
+KR-EX-01,Korea,Experiences,Guide quality,Guide's English was hard to follow
+KR-EX-02,Korea,Experiences,Guide quality,Guide seemed rushed and bored
+KR-EX-02,Korea,Experiences,Late start / no-show,Guide was 30 minutes late
+KR-EX-02,Korea,Experiences,Value,Hidden fee for the boat
+KR-EX-04,Korea,Experiences,Group size,Group was too big to hear anything
+KR-EX-06,Korea,Experiences,Value,Overpriced for what it was
+KR-SV-01,Korea,Services,Communication,No reply for two days before the booking
+KR-SV-02,Korea,Services,Communication,No reply for two days before the booking
+KR-SV-03,Korea,Services,Hygiene,Left the kitchen messy
+KR-SV-04,Korea,Services,Punctuality,Photographer rescheduled the same day
+KR-SV-04,Korea,Services,Pricing,Overcharged for ingredients
+IN-ST-01,India,Stays,Noise,Very noisy street all night
+IN-ST-01,India,Stays,Noise,Very noisy street all night
+IN-ST-01,India,Stays,Cleanliness,Kitchen smelled and the floor had stains
+IN-ST-02,India,Stays,Amenities,Air con broken
+IN-ST-02,India,Stays,Check-in,Couldn't get in until midnight
+IN-ST-03,India,Stays,Amenities,Host ignored us when the shower broke
+IN-ST-03,India,Stays,Cleanliness,Kitchen smelled and the floor had stains
+IN-ST-05,India,Stays,Amenities,Host ignored us when the shower broke
+IN-ST-07,India,Stays,Amenities,Host ignored us when the shower broke
+IN-ST-08,India,Stays,Check-in,Key wasn't where the host said
+IN-ST-10,India,Stays,Cleanliness,Kitchen smelled and the floor had stains
+IN-EX-01,India,Experiences,Meeting point,Couldn't find the meeting point
+IN-SV-01,India,Services,Quality of work,Food was bland and undercooked
+IN-SV-01,India,Services,Hygiene,Left the kitchen messy
+IN-SV-02,India,Services,Hygiene,Left the kitchen messy
+IN-SV-02,India,Services,Quality of work,Photos were blurry
+IN-SV-02,India,Services,Quality of work,Photos were blurry
+IN-SV-03,India,Services,Pricing,Overcharged for ingredients
+IN-SV-04,India,Services,Hygiene,Left the kitchen messy
+SEA-ST-01,Southeast Asia,Stays,Noise,Very noisy street all night
+SEA-ST-01,Southeast Asia,Stays,Check-in,Key wasn't where the host said
+SEA-ST-02,Southeast Asia,Stays,Noise,Construction next door from 7am
+SEA-ST-04,Southeast Asia,Stays,Host communication,Host never replied to messages
+SEA-ST-04,Southeast Asia,Stays,Noise,Very noisy street all night
+SEA-ST-05,Southeast Asia,Stays,Noise,Very noisy street all night
+SEA-ST-06,Southeast Asia,Stays,Noise,Construction next door from 7am
+SEA-ST-07,Southeast Asia,Stays,Noise,Very noisy street all night
+SEA-ST-08,Southeast Asia,Stays,Noise,Very noisy street all night
+SEA-ST-09,Southeast Asia,Stays,Check-in,"Lockbox code didn't work, waited outside 40 minutes"
+SEA-ST-10,Southeast Asia,Stays,Not as described,Much smaller than the photos
+SEA-ST-10,Southeast Asia,Stays,Noise,Construction next door from 7am
+SEA-EX-03,Southeast Asia,Experiences,Late start / no-show,We waited at the start for ages
+SEA-EX-04,Southeast Asia,Experiences,Late start / no-show,"Started 45 minutes late, no apology"
+SEA-EX-05,Southeast Asia,Experiences,Late start / no-show,We waited at the start for ages
+SEA-EX-05,Southeast Asia,Experiences,Late start / no-show,Guide was 30 minutes late
+SEA-EX-05,Southeast Asia,Experiences,Late start / no-show,"Started 45 minutes late, no apology"
+SEA-EX-06,Southeast Asia,Experiences,Late start / no-show,Guide was 30 minutes late
+SEA-SV-01,Southeast Asia,Services,Punctuality,Photographer rescheduled the same day
+SEA-SV-04,Southeast Asia,Services,Quality of work,Photos were blurry
